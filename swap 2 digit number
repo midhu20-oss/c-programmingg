@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() 
+{
+    int num, firstDigit, secondDigit, result;
+    scanf("%d", &num);
+    while (num >= 100)
+    {
+        num /= 10;
+    }
+    firstDigit = num / 10;
+    secondDigit = num % 10;
+    result = secondDigit * 10 + firstDigit;
+    printf("%d\n", result);
+    return 0;
+}
